@@ -1,7 +1,7 @@
 {
   "name": "codetalk",
-  "version": "1.0.0",
-  "description": "AI-powered code commenting CLI tool",
+  "version": "1.0.1",
+  "description": "AI powered code commenting CLI tool",
   "main": "src/index.js",
   "type": "module",
   "bin": {
@@ -19,6 +19,14 @@
   ],
   "author": "SuhaibKing",
   "license": "MIT",
+  "homepage": "https://github.com/Suhaib3100/codetalk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suhaib3100/codetalk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Suhaib3100/codetalk/issues"
+  },
   "dependencies": {
     "boxen": "^7.1.1",
     "chalk": "^5.3.0",
