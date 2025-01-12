@@ -1,0 +1,32 @@
+{
+  "name": "codetalk",
+  "version": "1.0.0",
+  "description": "AI-powered code commenting CLI tool",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "codetalk": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "keywords": [
+    "cli",
+    "code",
+    "comments",
+    "documentation",
+    "ai"
+  ],
+  "author": "SuhaibKing",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "dotenv": "^16.4.7",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "openai": "^4.20.1",
+    "ora": "^7.0.1"
+  }
+}
