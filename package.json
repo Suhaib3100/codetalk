@@ -1,6 +1,6 @@
 {
   "name": "codetalk",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "AI powered code commenting CLI tool",
   "main": "src/index.js",
   "type": "module",
@@ -28,10 +28,13 @@
     "url": "https://github.com/Suhaib3100/codetalk/issues"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.3",
     "boxen": "^7.1.1",
     "chalk": "^5.3.0",
     "cli-table3": "^0.6.3",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "glob": "^10.3.10",
     "inquirer": "^9.2.12",
     "openai": "^4.20.1",
