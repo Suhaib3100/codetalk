@@ -1,7 +1,4 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { getCompletion } from './ai.js';
-
+// Function to process files, adding comments based on specified rules
 export async function processFiles({ files, commentStyle, apiKey }) {
   let filesProcessed = 0;
   let commentsAdded = 0;
@@ -28,6 +25,7 @@ export async function processFiles({ files, commentStyle, apiKey }) {
   return { filesProcessed, commentsAdded };
 }
 
+// Function to add comments to code based on specified rules using AI completion
 async function addComments(code, { fileExtension, commentStyle, apiKey }) {
   const prompt = `You are a code documentation expert. Add minimal, focused comments to the following ${fileExtension} code with these strict rules:
   1. DO NOT modify any existing code - only add comments
@@ -58,6 +56,7 @@ async function addComments(code, { fileExtension, commentStyle, apiKey }) {
   return commentedCode;
 }
 
+// Function to count the number of new comments added to the code
 function countNewComments(originalCode, commentedCode) {
   const originalComments = (originalCode.match(/\/\*[\s\S]*?\*\/|\/\/.*/g) || []).length;
   const newComments = (commentedCode.match(/\/\*[\s\S]*?\*\/|\/\/.*/g) || []).length;
