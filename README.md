@@ -1,12 +1,13 @@
+
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/Suhaib3100/codetalk "Language"" alt="Language" />
-  <img src="https://img.shields.io/github/stars/Suhaib3100/codetalk "Stars"" alt="Stars" />
-  <img src="https://img.shields.io/github/issues-pr/Suhaib3100/codetalk "Pull Requests"" alt="Pull Requests" />
-  <img src="https://img.shields.io/github/issues/Suhaib3100/codetalk "Issues"" alt="Issues" />
-  <img src="https://img.shields.io/github/contributors/Suhaib3100/codetalk "Contributors"" alt="Contributors" />
-  <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white "Node.js"" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white "Express.js"" alt="Express.js" />
-  <img src="https://img.shields.io/badge/OpenAI-00A400?logo=openai&logoColor=white "OpenAI"" alt="OpenAI" />
+  <img src="https://img.shields.io/github/languages/top/Suhaib3100/codetalk" alt="Language" />
+  <img src="https://img.shields.io/github/stars/Suhaib3100/codetalk" alt="Stars" />
+  <img src="https://img.shields.io/github/issues-pr/Suhaib3100/codetalk" alt="Pull Requests" />
+  <img src="https://img.shields.io/github/issues/Suhaib3100/codetalk" alt="Issues" />
+  <img src="https://img.shields.io/github/contributors/Suhaib3100/codetalk" alt="Contributors" />
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white" alt="Express.js" />
+  <img src="https://img.shields.io/badge/OpenAI-00A400?logo=openai&logoColor=white" alt="OpenAI" />
 </p>
 
 ## Overview
@@ -23,65 +24,99 @@
 
 1. Clone the CodeTalk repository:  
    ```bash  
-   git clone https://github.com/Suhaib3100/codetalk  
-Navigate to the project directory:
+   git clone https://github.com/Suhaib3100/codetalk
+   ```
 
-cd codetalk  
-Install the dependencies with one of the package managers listed below:
+2. Navigate to the project directory:
+   ```bash
+   cd codetalk
+   ```
 
-npm install  
-# or
-yarn install  
-# or
-pnpm install  
-# or
-bun install  
-Start the development mode:
+3. Install the dependencies with one of the package managers listed below:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
 
-npm start  
-API Endpoints
-Health Check
-GET /health
-Description: Check if the server is running.
-Response: { "status": "Server is running" }
-Commenting Endpoint
-POST /comment
-Description: Generate comments for the provided code.
-Request Body:
+4. Start the development mode:
+   ```bash
+   npm start
+   ```
 
-{
-  "code": "function add(a, b) { return a + b; }",
-  "commentStyle": "basic"
-}
-Response:
+## Usage
 
-{
-  "commentedCode": "// Function to add two numbers\nfunction add(a, b) { return a + b; }"
-}
-Changelog
-[Version 1.0.0] - YYYY-MM-DD
-Initial release with core functionality.
-Roadmap
-Task 1: Implement support for additional programming languages.
-Task 2: Enhance commenting styles and options.
-Task 3: Add a web interface for easier usage.
-FAQ
-1. What is this project about?
-CodeTalk aims to simplify the process of adding comments to code, making it easier for developers to maintain and understand their projects.
+To use CodeTalk, install it globally or locally:
 
-2. How can I contribute to this project?
-We welcome contributions! Please refer to our Contribution Guidelines for more information on how to contribute.
+1. Install CodeTalk:
+   ```bash
+   npm i codetalk
+   ```
 
-3. What technologies are used in this project?
-This project uses Node.js, Express.js, and the OpenAI API to provide intelligent code commenting.
+2. Run CodeTalk using `npx`:
+   ```bash
+   npx codetalk
+   ```
 
-Contributors
+## API Endpoints
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Health Check
+- **GET /health**  
+  **Description**: Check if the server is running.  
+  **Response**:  
+  ```json
+  { "status": "Server is running" }
+  ```
 
+### Commenting Endpoint
+- **POST /comment**  
+  **Description**: Generate comments for the provided code.  
+  **Request Body**:  
+  ```json
+  {
+    "code": "function add(a, b) { return a + b; }",
+    "commentStyle": "basic"
+  }
+  ```
 
+  **Response**:  
+  ```json
+  {
+    "commentedCode": "// Function to add two numbers
+function add(a, b) { return a + b; }"
+  }
+  ```
 
-### Summary
+## Changelog
 
-This README is structured to provide a clear overview of your `CodeTalk` project, including features, usage instructions, API endpoints, and more. You can copy and paste this Markdown content into your `README.md` file. If you have any further questions or need additional modifications, feel free to ask!
+- **[Version 1.0.0]** - YYYY-MM-DD  
+  Initial release with core functionality.
+
+## Roadmap
+
+- Task 1: Implement support for additional programming languages.
+- Task 2: Enhance commenting styles and options.
+- Task 3: Add a web interface for easier usage.
+
+## FAQ
+
+1. **What is this project about?**  
+   CodeTalk aims to simplify the process of adding comments to code, making it easier for developers to maintain and understand their projects.
+
+2. **How can I contribute to this project?**  
+   We welcome contributions! Please refer to our [Contribution Guidelines](CONTRIBUTING.md) for more information on how to contribute.
+
+3. **What technologies are used in this project?**  
+   This project uses Node.js, Express.js, and the OpenAI API to provide intelligent code commenting.
+
+## Contributors
+
+[See the full list of contributors here](https://github.com/Suhaib3100/codetalk/graphs/contributors).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
