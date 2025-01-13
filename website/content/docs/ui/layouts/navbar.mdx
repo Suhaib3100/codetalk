@@ -1,0 +1,48 @@
+---
+title: Navbar
+description: Top navigation bar
+---
+
+## Introduction
+
+The navigation header provides common interactive elements.
+
+```tsx
+import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+
+export const baseOptions: BaseLayoutProps = {
+  githubUrl: 'https://github.com/Suhaib3100/codetalk',
+  nav: {
+    title: 'My App',
+  },
+};
+```
+
+### Sidebar
+
+On docs layout, it becomes a part of sidebar when the sidebar is shown.
+
+### Transparent Mode
+
+To make the navbar background transparent, you can configure transparent mode.
+It uses the `none` mode by default.
+
+```tsx
+import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+
+export const baseOptions: BaseLayoutProps = {
+  nav: {
+    transparentMode: 'top',
+  },
+};
+```
+
+| Mode     | Description                         |
+| -------- | ----------------------------------- |
+| `always` | Always use a transparent background |
+| `top`    | When at the top of page             |
+| `none`   | Disable transparent background      |
+
+### Reference
+
+<AutoTypeTable path="./content/docs/ui/props.ts" name="NavbarProps" />

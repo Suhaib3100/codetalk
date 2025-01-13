@@ -1,0 +1,20 @@
+{
+  "title": "Fumadocs MDX",
+  "description": "The official content source",
+  "icon": "Pencil",
+  "root": true,
+  "pages": [
+    "---Guide---",
+    "index",
+    "...",
+    "---Configuration---",
+    "collections",
+    "global",
+    "mdx",
+    "plugin",
+    "---Features---",
+    "include",
+    "last-modified",
+    "manifest"
+  ]
+}
